@@ -1,0 +1,49 @@
+table {
+    width: 80%;
+    margin: 5px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #E7F2F8;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    color: #ddd;
+    background-color: #05445E;
+    
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
+
+.table-sortable th{
+    cursor: pointer;
+}
+
+.table-sortable th.sort-by-asc::after{
+    content: "\25B2";
+}
+
+.table-sortable th.sort-by-desc::after{
+    content: "\25BC";
+}
+
+.table-sortable th.sort-by-asc::after,
+.table-sortable th.sort-by-desc::after{
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+.table-sortable th.sort-by-asc,
+.table-sortable th.sort-by-desc{
+    background: #178ca4;
+    /* border: solid .25em; */
+}
+
+
+
+
